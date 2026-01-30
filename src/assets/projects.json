@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Real-Time Chat App",
+    "description": "A MERN-based chat application supporting real-time messaging using Socket.io. Includes user authentication, private/public chat rooms, and stores messages in MongoDB for persistent and secure communication between users.",
+    "image": "https://via.placeholder.com/300x200?text=Real-Time+Chat+App"
+  },
+  {
+    "name": "Password Manager",
+    "description": "A secure password manager built with the MERN stack. It encrypts and stores user credentials, features login/signup, and allows users to manage and generate strong passwords efficiently.",
+    "image": "https://via.placeholder.com/300x200?text=Password+Manager"
+  },
+  {
+    "name": "Spotify UI Clone",
+    "description": "A visually accurate Spotify user interface clone built using React and Node.js. Displays playlists, album art, and audio controls with responsive design, mimicking Spotify's modern and sleek layout.",
+    "image": "https://via.placeholder.com/300x200?text=Spotify+UI+Clone"
+  },
+  {
+    "name": "Chatbot with Gemini API",
+    "description": "An AI-powered chatbot using the Gemini API integrated into a MERN stack. Users can interact in real-time, with intelligent responses generated and stored for improved conversational context.",
+    "image": "https://via.placeholder.com/300x200?text=Chatbot+with+Gemini+API"
+  }
+]

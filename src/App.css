@@ -1,0 +1,8 @@
+nav a.active {
+  text-decoration: underline;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* small helper for focus visibility and keyboard nav */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: none; box-shadow: var(--focus); }
