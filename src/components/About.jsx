@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/mylogo.png';
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
           <div className="md:flex md:gap-8 items-start">
             <div className="flex-shrink-0 mb-6 md:mb-0">
               <div className="w-28 h-28 rounded-xl overflow-hidden tilt shadow-lg">
-                <img src="./src/assets/mylogo.png" alt="logo" className="w-full h-full object-cover" />
+                <img src={logo} alt="logo" className="w-full h-full object-cover" />
               </div>
             </div>
 

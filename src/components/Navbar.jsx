@@ -1,6 +1,7 @@
 // src/components/Navbar.js
 
 import { useState } from "react";
+import logo from "../assets/mylogo.png";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
       <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo + Name */}
         <div className="flex items-center gap-3 text-2xl font-semibold">
-          <img src="./src/assets/mylogo.png" width={44} height={44} alt="Avneet logo" className="rounded-full shadow-sm"/>
+          <img src={logo} width={44} height={44} alt="Avneet logo" className="rounded-full shadow-sm"/>
           <span className="text-white">Avneet Singh</span>
         </div>
 
