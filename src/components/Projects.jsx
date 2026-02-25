@@ -1,10 +1,12 @@
 import projects from "../assets/projects.json"
 
+import projectImage from "../assets/ProjectCoverPic.png"
+
 const Projects = () => {
   return (
     <>
     <div className="mx-auto my-10 w-24 h-0.5 bg-white/6 rounded" />
-    <section id="projects" className="min-h-screen py-8 scroll-item">
+    <section id="projects" className="min-h-screen py-1 scroll-item">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center text-white/90 mb-8 scroll-text">Projects</h2>
 
@@ -12,7 +14,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <article key={index} className="relative group rounded-xl overflow-hidden tilt card scroll-card">
               <div className="absolute inset-0">
-                <img src={project.image} alt={project.name} className="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src={projectImage} alt={project.name} className="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
 
               <div className="relative z-10 p-4 bg-gradient-to-t from-black/60 to-transparent h-56 sm:h-64 flex flex-col justify-end">

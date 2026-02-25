@@ -3,7 +3,7 @@ import logo from '../assets/mylogo.png';
 
 const About = () => {
   return (
-    <section id="about" className="px-4 py-12 min-h-screen scroll-item">
+    <section id="about" className="px-4 py-5 min-h-screen scroll-item">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-8 text-white/90 scroll-text">About Me</h2>
 

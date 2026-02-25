@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import profilePic from "../assets/profilePic.png"
 
 const Main = () => {
   const oneLiners = [
@@ -56,20 +57,22 @@ const Main = () => {
             I build interfaces and APIs for delightful user experiences —{' '}
             <span className="text-pink-300 font-semibold">{string}</span>
           </p>
-
+          
+         
           <button
-            onClick={() => (location.href = "#about")}
+            onClick={() => window.open("/myresume.pdf", "_blank")}
             className="mt-6 inline-flex items-center gap-3 px-6 py-2 rounded-full text-lg font-semibold text-white btn-accent btn-glow focus-ring"
           >
-            About Me
+            View-My Resume
           </button>
+         
         </div>
 
         {/* Right side */}
         <div className="w-full lg:w-1/3 flex justify-center lg:justify-end scroll-image">
           <div className="tilt float rounded-full overflow-hidden w-48 h-48 sm:w-64 sm:h-64 shadow-xl">
             <img
-              src="https://cdn.britannica.com/48/222648-050-F4D0A2D8/President-of-India-A-P-J-Abdul-Kalam-2007.jpg"
+              src={profilePic}
               alt="Avneet"
               className="w-full h-full object-cover"
             />

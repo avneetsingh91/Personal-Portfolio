@@ -34,7 +34,7 @@ const Contact = () => {
     <>
       <div className="mx-auto my-10 w-24 h-0.5 bg-white/6 rounded" />
 
-      <section id="contact" className="px-4 py-12 scroll-item">
+      <section id="contact" className="px-4 py-2 scroll-item">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-8 text-white/90 scroll-text">Contact Me</h2>
 
@@ -46,15 +46,15 @@ const Contact = () => {
               <div className="space-y-3 text-white/90">
                 <div>
                   <span className="block font-medium">Email</span>
-                  <span className="text-muted">johndoe@example.com</span>
+                  <span className="text-muted">developeravneet05@gmail.com</span>
                 </div>
                 <div>
                   <span className="block font-medium">Phone</span>
-                  <span className="text-muted">+1 (123) 456-7890</span>
+                  <span className="text-muted">62806-22901</span>
                 </div>
                 <div>
                   <span className="block font-medium">Location</span>
-                  <span className="text-muted">New York, USA</span>
+                  <span className="text-muted"> Punjab , India</span>
                 </div>
               </div>
             </aside>

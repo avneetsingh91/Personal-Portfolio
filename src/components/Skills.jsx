@@ -2,7 +2,7 @@ import skills from '../assets/skills.json';
 
 const Skills = () => {
   return (
-    <section id="skills" className="px-4 py-12 min-h-screen scroll-item">
+    <section id="skills" className="px-4 py-1 min-h-screen scroll-item">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-8 text-white/90 scroll-text">Skills</h2>
 
