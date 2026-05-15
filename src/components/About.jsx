@@ -30,7 +30,7 @@ const About = () => {
 
               <div className="flex flex-wrap gap-4">
                 <a href="https://github.com/avneetsingh91" target="_blank" rel="noopener noreferrer" className="focus-ring">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/1200px-Github-desktop-logo-symbol.svg.png" alt="GitHub" className="w-10 hover:scale-110 transition-transform" />
+                  <img src="http://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png"  className="w-10 hover:scale-110 transition-transform"/>
                 </a>
                 <a href="https://www.instagram.com/avneetsingh.05/" target="_blank" rel="noopener noreferrer" className="focus-ring">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_14_oeXWPsimafqjhUvvFkFQn6JO1v0csA&s" alt="Instagram" className="w-10 hover:scale-110 transition-transform rounded" />
