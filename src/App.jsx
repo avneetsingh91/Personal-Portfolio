@@ -5,18 +5,15 @@ import ScrollAnimationManager from './components/ScrollAnimationManager'
 
 const App = () => {
   return (
+    <>
+      
+        <ScrollAnimationManager /> 
+        <Navbar />
+        <Home/>
 
-   <>
-   <ScrollAnimationManager />
-   <Navbar/>
-   <Home/>
-  
-  
-   
-
-   </>
+        
+    </>
   )
 }
 
 export default App
-

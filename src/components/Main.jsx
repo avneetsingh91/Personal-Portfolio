@@ -54,8 +54,10 @@ const Main = () => {
           <p className="text-2xl md:text-3xl font-semibold">Hi there, I’m</p>
           <p className="text-3xl md:text-4xl font-extrabold">Avneet Singh</p>
           <p className="mt-4 text-lg md:text-xl text-muted">
+            
             I build interfaces and APIs for delightful user experiences —{' '}
-            <span className="text-pink-300 font-semibold">{string}</span>
+             <div className="text-pink-300 font-semibold">I am into {string}</div>
+           
           </p>
           
          

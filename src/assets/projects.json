@@ -7,11 +7,10 @@
     "link":"https://fullstack-chatapp-mhv2.onrender.com/"
   },
   {
-    "name": "Password Manager",
-    "description": "A secure password manager built with the MERN stack. It encrypts and stores user credentials, features login/signup, and allows users to manage and generate strong passwords efficiently.",
-   
-    "repo":"https://github.com/avneetsingh91/Password-Manager?tab=readme-ov-file",
-    "link": "https://password-manager-tau-topaz.vercel.app/"
+    "name": "Ai Code Manager",
+    "description": "Developed a secure JavaScript online compiler that allows users to write, execute, and test code in real time. Integrated coding assistance features and file-saving functionality to improve productivity and streamline code management.",
+    "repo":"https://github.com/avneetsingh91/AI-Integrated-Code-Manager-App",
+    "link": "https://ai-integrated-code-manager-app.onrender.com/dashboard"
   },
   {
     "name": "Task Manager",
@@ -21,10 +20,10 @@
     "link":"https://mern-task-app-frontend-puce.vercel.app/login"
   },
   {
-    "name": "Chatbot with Gemini API",
-    "description": "An AI-powered chatbot using the Gemini API integrated into a MERN stack. Users can interact in real-time, with intelligent responses generated and stored for improved conversational context.",
+    "name": "Ai Auditing App",
+    "description": "Built an AI-powered auditing application that analyzes data records, detects anomalies, and generates intelligent audit reports. The platform automates verification processes, improves compliance tracking, and provides actionable insights for faster and more accurate decision-making. ",
     
-    "repo":"https://github.com/avneetsingh91/fullStack--ChatApp",
-    "link":"https://fullstack-chatapp-mhv2.onrender.com/"
+    "repo":"https://github.com/avneetsingh91/credex-ai-audit",
+    "link":"https://credex-ai-audit-omega.vercel.app/"
   }
 ]
