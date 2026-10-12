@@ -2,24 +2,24 @@
 
 /* Design tokens and global styles for dark, modern theme */
 :root{
-  --bg:#0b1020;
-  --bg-2:#0f1724;
+  --bg:#0c0c0e;
+  --bg-2:#121215;
   --panel: rgba(255,255,255,0.04);
   --glass: rgba(255,255,255,0.04);
-  --accent:#ff6bcb;
-  --accent-2:#7a4675;
-  --muted: #9aa4bf;
+  --accent:#28a99e;
+  --accent-2:#28a99e;
+  --muted: #a3a8b8;
   --glass-border: rgba(255,255,255,0.06);
-  --focus: 0 0 0 4px rgba(122,70,117,0.18);
+  --focus: 0 0 0 4px rgba(40,169,158,0.18);
   --card-shadow: 0 8px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
 }
 
 /* Base and accessibility */
 html{
   scroll-behavior:smooth;
-  scroll-padding-top:88px;
-  background: radial-gradient(1200px 600px at 10% 10%, rgba(122,70,117,0.06), transparent), var(--bg);
-  color: #e6eef8;
+  scroll-padding-top:64px;
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(40,169,158,0.05), transparent), var(--bg);
+  color: #e5e7eb;
 }
 
 body{
@@ -66,17 +66,40 @@ body{
 
 .float { animation: floaty 6s ease-in-out infinite; will-change: transform; }
 
+/* blinking live-status dot (navbar avatar) */
+@keyframes liveBlink {
+  0%, 100% { box-shadow: 0 0 0 0 var(--accent); }
+  50% { box-shadow: 0 0 0 6px transparent; }
+}
+
+.live-dot { animation: liveBlink 1.6s ease-in-out infinite; }
+
 /* tilt effect */
 .tilt { transform: perspective(800px) translateZ(0) rotateX(0) rotateY(0); transition: transform 300ms cubic-bezier(.2,.9,.2,1), box-shadow 300ms; }
 .tilt:hover{ transform: perspective(800px) translateZ(20px) rotateX(3deg) rotateY(-3deg); }
 
 /* focused links and buttons */
-.btn-accent{ background: linear-gradient(90deg,var(--accent), var(--accent-2)); box-shadow: 0 8px 30px rgba(122,70,117,0.18); }
-.btn-glow:hover{ box-shadow: 0 10px 30px rgba(122,70,117,0.16), 0 0 18px rgba(255,107,203,0.08) }
+.btn-accent{ background: linear-gradient(90deg,var(--accent), var(--accent-2)); box-shadow: 0 8px 30px rgba(40,169,158,0.18); }
+.btn-glow:hover{ box-shadow: 0 10px 30px rgba(40,169,158,0.16), 0 0 18px rgba(40,169,158,0.08) }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce){
   .float, * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+/* Custom cursor follower */
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-radius: 9999px;
+  z-index: 9999;
+  will-change: transform;
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(40, 169, 158, 0.8);
 }
 
 /* Hide scrollbars but keep functionality */
@@ -130,7 +153,7 @@ section:nth-child(n+5) { animation-delay: 400ms; }
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(122, 70, 117, 0.06), transparent);
+  background: radial-gradient(circle at 50% 50%, rgba(40, 169, 158, 0.05), transparent);
   pointer-events: none;
   will-change: transform;
   z-index: 0;
@@ -196,7 +219,7 @@ section:nth-child(n+5) { animation-delay: 400ms; }
 
 .scroll-lift:hover {
   transform: perspective(1000px) translateY(-10px) rotateX(-2deg) scale(1.02);
-  box-shadow: 0 20px 40px rgba(122, 70, 117, 0.25);
+  box-shadow: 0 20px 40px rgba(40, 169, 158, 0.2);
 }
 
 /* Staggered list items */
@@ -238,5 +261,83 @@ section:nth-child(n+5) { animation-delay: 400ms; }
     opacity: 1;
     transform: none;
   }
+}
+
+/* Theme tokens — dark is the default */
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f2f5fb;
+  --bg-2: #ffffff;
+  --panel: rgba(255, 255, 255, 0.75);
+  --glass: rgba(255, 255, 255, 0.75);
+  --muted: #5b6575;
+  --glass-border: rgba(15, 23, 42, 0.12);
+  --card-shadow: 0 8px 30px rgba(15, 23, 42, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  --accent: #967bb6;
+  --accent-2: #7d5fa3;
+}
+
+/* Light background + primary text */
+html[data-theme="light"] {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(255, 107, 203, 0.05), transparent), var(--bg);
+  color: #1b2436;
+}
+
+/* Light glass surface */
+html[data-theme="light"] .glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.55));
+  border-color: rgba(15, 23, 42, 0.12);
+}
+
+/* Light page wrappers that use bg-black */
+html[data-theme="light"] .bg-black {
+  background-color: var(--bg);
+}
+
+/* Button glow becomes lavender in light mode */
+html[data-theme="light"] .btn-glow:hover {
+  box-shadow: 0 10px 30px rgba(150, 123, 182, 0.16), 0 0 18px rgba(150, 123, 182, 0.08);
+}
+
+/* Flip Tailwind's white + pink tokens so utilities become ink/lavender in light mode */
+@layer theme {
+  html[data-theme="dark"] {
+    --color-pink-300: #7fd4cc;
+    --color-pink-400: #28a99e;
+    --color-pink-500: #1f8a80;
+    --color-purple-400: #28a99e;
+    --color-purple-600: #166f66;
+  }
+
+  html[data-theme="light"] {
+    --color-white: #1b2436;
+    --color-pink-300: #cdbfe4;
+    --color-pink-400: #967bb6;
+    --color-pink-500: #7d5fa3;
+  }
+}
+
+/* Dark mode: keep it flat — no glow / brighten / highlight effects */
+html[data-theme="dark"] .btn-accent,
+html[data-theme="dark"] .btn-glow:hover {
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .scroll-lift:hover,
+html[data-theme="dark"] .tilt:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .float {
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] .blur-3xl {
+  opacity: 0;
 }
 

@@ -1,46 +1,62 @@
 import React from 'react';
-import logo from '../assets/mylogo.png';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import Stats from './Stats';
 
 const About = () => {
   return (
-    <section id="about" className="px-4 py-5 min-h-screen scroll-item">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-8 text-white/90 scroll-text">About Me</h2>
+    <section id="about" className="px-4 sm:px-8 min-h-svh flex flex-col pt-4 pb-10 md:pt-6 md:pb-12 scroll-item">
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="text-center mb-4 scroll-text">
+          <p className="text-pink-400 tracking-[0.3em] uppercase text-xs md:text-sm font-semibold">Who I Am</p>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white/90 mt-2">
+            About{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-400">Me</span>
+          </h2>
+          <div className="mx-auto mt-3 w-16 h-0.5 bg-gradient-to-r from-pink-500 to-white/30" />
+        </div>
 
-        <div className="card glass p-6 md:p-10 scroll-lift">
-          <div className="md:flex md:gap-8 items-start">
-            <div className="flex-shrink-0 mb-6 md:mb-0">
-              <div className="w-28 h-28 rounded-xl overflow-hidden tilt shadow-lg">
-                <img src={logo} alt="logo" className="w-full h-full object-cover" />
-              </div>
-            </div>
+        <div className="card glass p-6 md:p-8 rounded-2xl scroll-lift">
+          <div className="md:flex md:items-start md:justify-between gap-8">
+            <div className="flex-1">
+              <div className="text-3xl md:text-4xl font-extrabold">Avneet Singh</div>
+              <p className="mt-1 text-base md:text-xl text-[var(--accent)] font-semibold">Full Stack Developer</p>
 
-            <div>
-              <div className="text-2xl md:text-3xl font-semibold mb-3">Avneet Singh</div>
-
-              <p className="text-base md:text-lg text-muted mb-6">
-                I’m a Full Stack Developer specializing in the MERN stack—MongoDB,
+              <p className="text-sm md:text-base text-muted mt-4 leading-relaxed">
+                I'm a Full Stack Developer specializing in the MERN stack — MongoDB,
                 Express.js, React, and Node.js. I build fast, scalable web apps with
-                clean, maintainable code. From crafting sleek frontends to
-                architecting robust backends, I turn ideas into functional,
-                user-friendly products. Passionate about problem-solving, I
-                constantly learn and adapt to deliver high-performance solutions for
-                modern web needs.
+                clean, maintainable code. From crafting sleek, pixel-perfect frontends
+                to architecting robust, production-grade backends, I turn raw ideas
+                into functional, user-friendly products.
               </p>
 
-              <div className="flex flex-wrap gap-4">
-                <a href="https://github.com/avneetsingh91" target="_blank" rel="noopener noreferrer" className="focus-ring">
-                  <img src="http://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png"  className="w-10 hover:scale-110 transition-transform"/>
+              <p className="text-sm md:text-base text-muted mt-3 leading-relaxed">
+                Passionate about problem-solving, I never stop learning. I constantly
+                adapt and evolve to deliver high-performance solutions that meet
+                modern web needs — and I love every line of it.
+              </p>
+            </div>
+
+            <div className="flex md:flex-col gap-3 mt-6 md:mt-0 shrink-0">
+              {[
+                { href: "https://github.com/avneetsingh91", label: "GitHub", icon: <FaGithub size={22} /> },
+                { href: "https://www.instagram.com/avneetsingh.05/", label: "Instagram", icon: <FaInstagram size={22} /> },
+                { href: "https://www.linkedin.com/in/avneet-singh-50a9a9282/", label: "LinkedIn", icon: <FaLinkedin size={22} /> },
+              ].map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="w-12 h-12 rounded-full glass flex items-center justify-center text-white/80 border border-white/10 hover:text-[var(--accent)] hover:border-[var(--accent)]/50 hover:scale-110 transition-all duration-300 focus-ring"
+                >
+                  {social.icon}
                 </a>
-                <a href="https://www.instagram.com/avneetsingh.05/" target="_blank" rel="noopener noreferrer" className="focus-ring">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_14_oeXWPsimafqjhUvvFkFQn6JO1v0csA&s" alt="Instagram" className="w-10 hover:scale-110 transition-transform rounded" />
-                </a>
-                <a href="https://www.linkedin.com/in/avneet-singh-50a9a9282/" target="_blank" rel="noopener noreferrer" className="focus-ring">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Jr3IvJraO1wfsdEFoHuQwHYuHrmRdNP0AA&s" alt="LinkedIn" className="w-10 hover:scale-110 transition-transform" />
-                </a>
-              </div>
+              ))}
             </div>
           </div>
+
+          <Stats />
         </div>
       </div>
     </section>

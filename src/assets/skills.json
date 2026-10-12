@@ -1,102 +1,92 @@
 [
-
     {
         "name": "HTML5",
+        "description": "Semantic markup for clean structure.",
         "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
     },
-
-     {
+    {
         "name": "CSS3",
+        "description": "Modern styling and responsive layouts.",
         "icon": "https://img.icons8.com/color/48/000000/css3.png"
     },
-
-      {
+    {
         "name": "JavaScript",
+        "description": "Core language that powers the web.",
         "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
     },
-
     {
         "name": "ReactJS",
+        "description": "Component-driven UI development.",
         "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
     },
-
-     {
+    {
         "name": "Redux",
+        "description": "Predictable state management.",
         "icon": "https://img.icons8.com/color/48/000000/redux.png"
     },
-
-      {
+    {
         "name": "TailwindCSS",
+        "description": "Utility-first CSS framework.",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1280px-Tailwind_CSS_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20230715030042"
     },
-
-     {
+    {
         "name": "MaterialUI",
+        "description": "Ready-to-use React components.",
         "icon": "https://img.icons8.com/color/48/000000/material-ui.png"
     },
-    
-
     {
         "name": "ExpressJS",
+        "description": "Backend framework for building APIs.",
         "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
     },
     {
         "name": "NodeJS",
+        "description": "JavaScript runtime for the server.",
         "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
     },
-
     {
         "name": "Python",
+        "description": "Versatile and beginner-friendly language.",
         "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
     },
-
     {
-        "name": "Fast APi",
+        "name": "FastAPI",
+        "description": "High-performance Python APIs.",
         "icon": "https://icon.icepanel.io/Technology/svg/FastAPI.svg"
     },
-   
     {
         "name": "Socket.io",
+        "description": "Real-time, bidirectional communication.",
         "icon": "https://icon.icepanel.io/Technology/svg/Socket.io.svg"
     },
-
-   {
+    {
         "name": "MongoDB",
+        "description": "Flexible document-based NoSQL database.",
         "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
     },
-   
-    
-      {
+    {
         "name": "PostgreSQL",
+        "description": "Robust relational SQL database.",
         "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
     },
-   
-    
-
     {
         "name": "C++",
+        "description": "High-performance systems programming.",
         "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
     },
-    
-     {
+    {
         "name": "Algorithms",
+        "description": "Problem solving and optimization.",
         "icon": "https://icon.icepanel.io/Technology/svg/The-Algorithms.svg"
     },
-
-   
     {
         "name": "Vercel",
+        "description": "Fast deployment and hosting platform.",
         "icon": "https://icon.icepanel.io/Technology/svg/Vercel.svg"
     },
-    
-    
-    
     {
         "name": "GitHub",
-        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+        "description": "Version control and collaboration.",
+        "icon": "https://img.icons8.com/fluency/48/000000/github.png"
     }
-
-    
-     
-     
 ]

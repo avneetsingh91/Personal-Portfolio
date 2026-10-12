@@ -1,10 +1,13 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 /**
  * Global Scroll Animation Manager
  * Observes all scroll-animated elements and triggers animations when they enter viewport
  */
 const ScrollAnimationManager = () => {
+  const { pathname } = useLocation();
+
   useEffect(() => {
     // Create intersection observer for scroll animations
     const observer = new IntersectionObserver(
@@ -55,7 +58,7 @@ const ScrollAnimationManager = () => {
         observer.unobserve(element);
       });
     };
-  }, []);
+  }, [pathname]);
 
   return null;
 };

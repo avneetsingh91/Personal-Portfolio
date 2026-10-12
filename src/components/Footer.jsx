@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,14 +18,14 @@ const Footer = () => {
           <div>
             <p className="font-semibold text-white mb-3 text-sm">Quick Links</p>
             <ul className="space-y-2 text-sm">
-              {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
+              {["Home", "About", "Skills", "Projects", "Contact", "Experience"].map((item) => (
                 <li key={item}>
-                  <a
-                    href={`#${item.toLowerCase()}`}
+                  <Link
+                    to={item.toLowerCase() === "home" ? "/" : item.toLowerCase() === "experience" ? "/experience" : `/#${item.toLowerCase()}`}
                     className="text-muted hover:text-white transition-colors focus-ring px-2 py-1 rounded"
                   >
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
