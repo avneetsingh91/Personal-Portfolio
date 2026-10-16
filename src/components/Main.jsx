@@ -99,7 +99,7 @@ const Main = () => {
             </div>
 
             <div className="mt-5 flex flex-wrap gap-2 justify-center lg:justify-start">
-              {["React.js", "Express.js", "Node.js", "MongoDB", "PostgreSQL","Typescript" ].map((chip) => (
+              {["React.js", "Express.js", "Node.js", "Next.js", "FastAPI" ,"MongoDB", "PostgreSQL","Typescript" ].map((chip) => (
                 <span
                   key={chip}
                   className="text-xs px-3 py-1.5 rounded-full border border-white/10 text-muted"
