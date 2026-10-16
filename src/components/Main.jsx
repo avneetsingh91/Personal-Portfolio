@@ -50,9 +50,9 @@ const Main = () => {
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mt-4">
             Crafting{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-400">
-              modern web
+              Modern Web
             </span>{" "}
-            experiences
+            Experiences
           </h1>
         </div>
 
@@ -99,7 +99,7 @@ const Main = () => {
             </div>
 
             <div className="mt-5 flex flex-wrap gap-2 justify-center lg:justify-start">
-              {["React", "Node.js", "MongoDB", "Express"].map((chip) => (
+              {["React.js", "Express.js", "Node.js", "MongoDB", "PostgreSQL","Typescript" ].map((chip) => (
                 <span
                   key={chip}
                   className="text-xs px-3 py-1.5 rounded-full border border-white/10 text-muted"
